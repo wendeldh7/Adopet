@@ -1,0 +1,161 @@
+:root {
+    --background-fundo: #E5E5E5;
+    --azul: #3772FF;
+    --verde: #36D6AD;
+    --coral: #FC7071;
+    --coral-hover: #FF9D9E;
+    --creme: #FCF0E3;
+    --cinza: #737380;
+    --cinza-claro:#BCBCBC;
+    --cinza-claro-fundos: #F6F6F6;
+    --cinza-fundo-card: #e8e5e5;
+    --cinza-claro-fundo-label: #F7F7F7;
+
+
+    --fonte: 'Poppins', sans-serif;
+    /* Regular 400 - Medium 500 - Bold 700*/
+}
+
+
+body {
+    font-family: var(--fonte);
+    background-color: var(--cinza-claro-fundos);
+    background-image: 
+    url(../img/Patas.png),
+    url(../img/Forma-1.png),
+    url(../img/forma-2.png);
+    background-repeat: no-repeat;
+    background-position: 
+    top right,
+    top left,
+    center right;
+    
+    color: var(--azul);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6em 0;
+    width: 80%;
+    margin: 0 auto;
+    height: 70vh;
+}
+
+.formulario__logo {
+    padding: 2em 0;
+}
+
+.formulario__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 1em;
+}
+
+.formulario__dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width: 300px;
+}
+
+.formulario__dados label {
+    color: var(--cinza);
+    padding: 0.6em;
+    font-size: 1.2em;
+}
+
+.formulario__dados input {
+    font-family: var(--fonte);
+    color: var(--cinza);
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    padding: 0.8em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    border: 1px solid var(--cinza-claro);
+    background-color: var(--cinza-fundo-card);
+}
+
+.botao-margin {
+    margin: 1em;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    body {
+    background-image: 
+    url(../img/Patas.png),
+    url(../img/Forma-1.png),
+    url(../img/Forma-2.png);
+    background-repeat: no-repeat;
+    background-position: 
+    top right,
+    top left,
+    bottom right;
+
+    background-size: 30%,70%,15%;
+
+    }
+
+    main {
+        height: 100vh;
+        font-size: 1.2em;
+        padding: 2em 0;
+    }
+
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        padding: 3.2em 2em;
+    }
+
+    .cabecalho__logo {
+        display: inline;
+        width: 100%;
+    }
+
+    .cabecalho__icones {
+        display: flex;
+        gap: 3em;
+    }
+
+    .formulario__dados {
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: 
+        url(../img/Patas.png),
+        url(../img/Forma-1.png),
+        url(../img/Forma-2.png);
+        background-repeat: no-repeat;
+        background-position: 
+        top right,
+        top left,
+        center right;
+    
+        background-size: 15%,45%,5%;
+
+        font-size: 1em;
+    }
+
+    .formulario__dados {
+        width: 40%;
+       }
+}
+
+

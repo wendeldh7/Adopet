@@ -1,0 +1,25 @@
+/*  Cabecalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.2em 2em;
+}
+
+.cabecalho__logo {
+    display: none;
+}
+
+.cabecalho__icones {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.cabecalho img {
+    transition: all 0.5s;
+}
+
+.cabecalho img:hover {
+    transform: scale(1.1);
+}

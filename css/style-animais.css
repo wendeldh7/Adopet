@@ -1,0 +1,177 @@
+:root {
+    --background-fundo: #E5E5E5;
+    --azul: #3772FF;
+    --verde: #36D6AD;
+    --coral: #FC7071;
+    --coral-hover: #FF9D9E;
+    --creme: #FCF0E3;
+    --cinza: #737380;
+    --cinza-claro:#BCBCBC;
+    --cinza-fundo-card: #e8e5e5;
+    --cinza-claro-fundos: #F6F6F6;
+    --cinza-claro-fundo-label: #F7F7F7;
+
+
+    --fonte: 'Poppins', sans-serif;
+    /* Regular 400 - Medium 500 - Bold 700*/
+}
+
+body {
+    font-family: var(--fonte);
+    background-color: var(--cinza-claro-fundos);
+    background-image: url(../img/Forma-1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    
+    height: 100vh;
+
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+.titulo {
+    color: var(--azul);
+    text-align: center;
+    padding: 3em;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: 12em;
+    color: var(--cinza);
+    
+    transition: all 0.5s;
+
+    /* From https://css.glass */
+    background: rgba(46, 42, 42, 0.098);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--verde);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card__final a:hover {
+    text-decoration: underline;
+    color: var(--verde);
+}
+
+.card__textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.card__textos h1 {
+    color: var(--azul);
+    font-weight: bold;
+    display: block;
+}
+
+.card__textos p {
+    padding-bottom: 0.2em;
+}
+
+.card__textos img {
+    position: relative;
+    top: 5px;
+    right: 2px;
+}
+
+.card__textos a {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    /*  Cabecalho */
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3.2em 2em;
+    }
+
+    .cabecalho__logo {
+        display: inline;
+    }
+
+    .cabecalho__icones {
+        display: flex;
+        gap: 3em;
+    }
+
+
+    /*  Cabecalho */
+
+    body {
+        background-image: url(../img/Forma-1.png);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: top left;
+
+        font-size: 1.1em;
+        
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em 1em;
+    }
+
+    .titulo {
+        font-size: 1.2em;
+        padding-top: 6em;
+    }
+
+    .card {
+        padding: 0.1em;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-image:
+        url(../img/Forma-1.png),
+        url(../img/forma-2.png);
+        background-repeat: no-repeat;
+        background-size: 40%, 8%;
+        background-position: top left, bottom right;
+
+        font-size: 1.1em;
+        
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2em 8em;
+        padding-bottom: 6em;
+    }
+
+    .cabecalho {
+        padding: 4em 5em;
+    }
+
+    .titulo {
+        padding-top: 4em;
+    }
+
+}
